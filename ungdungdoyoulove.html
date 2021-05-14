@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="ungdungdoyouloveme.css">
+
+</head>
+<body>
+<h1>Do you love me?</h1>
+<input type="button" id="yes" value="yes" onClick="yesclick()"/>
+<input type="button" id="No" value="No" onmouseover="noclick()"/>
+<script>
+    function yesclick() {
+        alert('<3')
+    }
+    function noclick(){
+        /* Khai báo 2 biến a,b để tạo giá trị random khi click chuột vào*/
+        let a = Math.floor(Math.random() * window.innerHeight);
+        let b = Math.floor(Math.random() * window.innerWidth);
+        /*hiển thị kết quả quả click cách trái, top bằng 2 biến random phí trên*/
+        document.getElementById('No').style.left = a + 'px';
+        document.getElementById('No').style.top = b + 'px';
+    }
+</script>
+</body>
+</html>
